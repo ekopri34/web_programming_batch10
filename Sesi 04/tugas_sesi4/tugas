@@ -1,0 +1,40 @@
+1. tulis judul algoritma
+    Judul Algoritma : Menghitung luas dan keliling ingkaran
+2. tulis input (untuk menghitung luas dan keliling lingkaran)
+    hitung luas lingkaran
+    L = phi x r x r
+
+    keliling lingkaran
+    
+    K = phi x 2 x r
+
+3. Langkah Kalkulasi luas dan keliling lingkaran
+    -mulai
+    -masukan nilai  phi= 3.14
+    -menetapkan nilai jari- jari
+    -pilih hitung luas lingkaran
+    -jika 'ya' maka dengan rumus luas =phi * jari-jari * jari-jari
+    -tampilkan hasil luas lingkaran
+    -jika 'tidak' maka hitung rumus keliling = phi * 2 * jari-jari 
+    -tampilkan hasil keliling lingkaran
+    -selesai
+
+4. tulis instruksi (untuk menampilkan hasil kalkulasi luas dan keliling lingkaran)
+
+    -Mulai
+    - masukan nilai phi = 3.14
+    - masukan nilai jari-jari = 10
+    - pilih hitung luas lingkaran atau keliling lingkaran
+        * jika luas lingkaran maka dikerjakan
+    -luas lingkaran
+        1. jika r = 10, Phi = 3.14
+        2. hitung luas lingkaran ( L = phi x r x r)
+            L = 3.14 * 10 * 10
+            L = 314
+
+        * jika keliling lingkaran maka dikerjakan
+    - keliling lingkaran
+        1. jika r=10, phi=3.14
+        2. hitung keliling lingkaran (K = phi x 2 X r)
+            K = 3.14 x 2 x 10
+            K = 62.8
