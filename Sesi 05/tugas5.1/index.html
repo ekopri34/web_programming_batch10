@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Sesi 5.1</title>
+</head>
+<body>
+    <h1>Kondisi ganti tombol (Belajar even)</h1>
+    <!--membuat even elemen tombol-->
+    <button id="tombol" onclick="ubahText()">KLIK AKU</button>
+    <script>
+        function ubahText(){
+        var element = document.getElementById("tombol")
+        if (element.innerHTML == "Klik aku") {
+        element.innerHTML = "Halo YAL"
+        }else{
+        element.innerHTML = "Klik aku"}
+
+        }
+    </script>
+
+    
+</body>
+</html>

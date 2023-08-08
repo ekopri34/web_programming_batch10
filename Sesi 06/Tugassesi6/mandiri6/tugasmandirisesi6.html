@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <h3>Belajar Interval &nbsp; Timeout</h3>
+
+    <p 
+        class="data1" style="color: blueviolet; background-color: aliceblue; padding: 10px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?
+    </p>
+
+    <p 
+        class="data2" style="color: rgb(61, 228, 136); background-color: rgb(190, 238, 100); padding: 10px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?
+    </p>
+
+    <p 
+        class="data3" style="color: rgb(216, 46, 68); background-color: white; padding: 10px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?
+    </p>
+
+    <script>
+    
+       var x = document.getElementsByClassName("data1")[0];
+       var y = document.getElementsByClassName("data2")[0];
+       var z = document.getElementsByClassName("data3")[0];
+
+       var interval;
+       var timeout;
+
+       changeColor();
+
+       function changeColor(){
+        clear(); //clear
+        interval = setInterval(myFunction, 300);
+        timeout = setTimeout(clear, 3000); // 4x500 + 4 times run
+       }
+
+       function clear() {
+        if (interval) {
+            clearInterval(interval);
+            console.log("clear interval");
+        }
+        if (timeout) {
+            clearInterval(timeout);
+            console.log("clear timeout");  
+            x.style.color = "black"; //end color
+            x.style.backgroundColor = "blueviolet";  // end background
+            y.style.color = "red"; //end color
+            y.style.backgroundColor = "blueviolet";  // end background
+            z.style.color = "blue"; //end color
+            z.style.backgroundColor = "blueviolet";  // end background
+            }
+        }
+
+        function myFunction() {
+        x.style.color = x.style.color == "yellow" ? "green" : "orange";
+        y.style.color = y.style.color == "white" ? "blue" : "black";
+        z.style.color = z.style.color == "blue" ? "greenyellow" : "cyan";
+      }
+
+     
+
+
+    </script>
+
+</body>
+
+</html>

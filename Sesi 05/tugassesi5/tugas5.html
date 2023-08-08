@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Tugas Sesi 5</title>
+</head>
+<body>
+    <label>Pesan  :</label><input type="text" id="masukan" placeholder="Silahkan Masukan Text"><br>
+    <label>Berapa Kali   :</label><input type="number" id="number" placeholder="Silahkan Masukan Angka"><br>
+    <button onclick="cetak()" >Cetak!</button>
+    <ol id="tampil"></ol>
+
+    <script>
+        // const nama_variabel= document.getElementById("nama_variabel")
+
+        function cetak(){
+            const masukan = document.getElementById("masukan").value;
+            const number  = document.getElementById("number").value;
+            parseInt (document.getElementById("number").value);
+
+            let tampil = "";
+            for (let data = 0; data < number; data++)  {
+                tampil += (data+1)+"." + masukan + "<br>"
+
+                document.getElementById("tampil").innerHTML = tampil;
+            }
+
+        }
+    </script>
+</body>
+</html>

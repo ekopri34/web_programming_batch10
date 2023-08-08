@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Method RegExp.prototype.exec</title>
+</head>
+<body>
+
+<!-- membaca script ini menggunakan inspeksi di browser di menu console -->
+    <script>
+        var foo = "1 jam sama dengan 60 menit, juga sama dengan 3600 detik";
+        var pola = /\d+/;
+
+        console.log(pola.exec(foo));   // Array ["1"] (mencari karakter angka dengan jumlah 1 digit ketik sudah ketemu, method langsung berhenti)
+
+        // mencari semua digit di method bisa menambahkan flag 'g' atau penanda dialam pola regular expression
+        var pola1 = /\d+/g;
+
+        console.log(pola1.exec(foo));  // Array ['1']
+        console.log(pola1.exec(foo));  // Array ['60']
+        console.log(pola1.exec(foo));  // Array ['3600']
+        console.log(pola1.exec(foo));  // null
+        
+        
+
+
+    </script>
+</body>
+</html>

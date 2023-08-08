@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Event ganti tombol menggunakan javascript </title>
+</head>
+<body>
+    <button id="tombol" onclick="ubahText()">Klik aku</button>
+
+    <script>
+        function ubahText() {
+    var element = document.getElementById("tombol")
+    if (element.innerHTML == "Klik aku") {
+        element.innerHTML = "Halo YAL"
+    }else{
+        element.innerHTML = "Klik aku"
+    }
+
+}
+
+    </script>
+</body>
+</html>

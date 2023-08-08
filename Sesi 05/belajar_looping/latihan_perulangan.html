@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Pengulangan</title>
+  </head>
+
+  <body>
+    <button onclick="print()">Print 1000X</button>
+    <div id="hasil"></div>
+
+    <script>
+      function print() {
+        const cetak = document.getElementById("hasil");
+        let hitung = 0;
+        while (hitung < 1000) {
+          cetak.innerHTML =
+            cetak.innerHTML + "<P>saya tidak akan terlambat lagi</p>";
+          hitung = hitung + 1;
+        }
+      }
+    </script>
+  </body>
+</html>
