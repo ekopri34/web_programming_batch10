@@ -1,0 +1,111 @@
+/* Reset default margin and padding for the ul */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; 
+    justify-content: flex-end;
+    display: flex;/* Background color for the navbar */
+}
+
+/* Style for each list item in the ul */
+li {
+    float: left; /* Float the list items horizontally */
+}
+
+/* Style for the links (anchors) in the navbar */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+/* Change color on hover */
+li a:hover {
+    background-color: #111;
+     /* Darker color on hover */
+}
+
+#gedung{ 
+    width: 1332px;
+    height: 390px;
+}
+
+
+
+
+.table{
+    background: rgb(143, 143, 187);
+    padding-right: 2cm;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: absolute;
+    height: 340px;
+    top: 139px;
+    left: 450px;
+
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 600px;
+}
+
+
+
+#gedung1 {
+
+    width: 1350px;
+    height: 500px;
+}
+
+
+.isi1 {
+    background: rgb(143, 143, 187);
+    padding-right: 2cm;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: absolute;
+    height: 340px;
+    top: 139px;
+    left: 50px;
+    width: 1160px;
+
+
+}
+
+.isi2{
+    background: rgb(143, 143, 187);
+    padding-right: 2cm;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: absolute;
+    height: 340px;
+    top: 139px;
+    left: 50px;
+    width: 1160px;
+    
+}
+
+.isi{
+    background: blue;
+    padding-right: 2cm;
+    margin: 0 auto;
+    margin-top: 0px;
+    position: absolute;
+    height: 170px;
+    width: 1255px;
+   text-align: center;
+
+   
+    
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <div
+    style="
+        background-color: rgb(51, 226, 45);
+        color: rgb(11, 11, 12);
+        padding: 10px;
+        border-radius: 10px;
+      ">
+    <h1>Nama : Eko Priyatno</h1>
+    <p>Ngoding HTML</p>
+    Cek Inspect | Cek Console
+    </div>
+
+    <p
+      style="
+        text-align: center;
+        color: rgb(42, 24, 197);
+        text-transform: capitalize;
+        font-weight: 900;
+      "
+    >
+    INPG-PKJ-10-025, Purwokerto
+    </p>
+<script>
+
+    function helloName(params) {
+        // wajib nama panggilan
+        if (params == "Eko") {
+            return `Hello ${params}`;
+        } else {
+            return `Anda bukan eko`;
+        }
+        // jika di dalam function pnya kondisi yang bercabang, berpengaruh pada output
+    }
+
+    console.log(helloName("Eko"));
+</script>
+
+
+</body>
+</html>
